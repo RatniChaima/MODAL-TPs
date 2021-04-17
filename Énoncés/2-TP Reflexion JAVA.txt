@@ -1,0 +1,131 @@
+Travail à faire:
+
+Donner le programme Java qui permet de récupérer et d’afficher les informations (ci-dessous) à partir d’un projet Java quelconque (un projet Java contient plusieurs classes Java).
+1. Nom du projet.
+2. Nombre de classe Java.
+3. Version de Java.
+4. Système d’exploitation et sa version.
+5. Liste des classes Java. Pour chaque classe, il faut donner :
+-Le nom de package.
+-Le nom de la classe.
+-La liste des attributs publics et privés (et leurs types).
+-Le/Les nom (s) de constructeur (s).
+-La liste des méthodes (nom de la méthode, type de paramètre de retour, liste des types des paramètres de la méthode).
+
+Utiliser la description textuelle (ci-dessous) pour l’organisation et l’affichage de ces informations. Cette description doit être sauvegardée dans un fichier .txt.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+Description textuelle -- Date : ………………...
+----------------------------------------------------------------------------------------------------------------------------------------
+Information projet
+----------------------------------------------------------------------------------------------------------------------------------------
+Nom du projet : …….
+Nombre de classes : …….
+Java Version : …….
+OS : …….
+----------------------------------------------------------------------------------------------------------------------------------------
+Information classes
+----------------------------------------------------------------------------------------------------------------------------------------
+Classe 1 :
+Nom Package : …………..
+Nom classe : …………..
+Nombre des attributs publics : …………..
+Liste et types des attributs publics : [att1 – type, att2 – type, …]
+Nombre des attributs privés : …………..
+Liste et types des attributs privés : [att1 – type, att2 – type, ...]
+Liste des constructeurs : [const1, const2 ….]
+Nombre de méthodes : …………..
+Liste des méthodes : [m1, m2 , …]
+Type de retour des méthodes : [m1 : type retour, m2 : type retour….]
+Paramètres et types des méthodes : m1 [param1 : type, param2 : type …..], m2 [param1 : type, param2 : type …..]
+----------------------------------------------------------------------------------------------------------------------------------------
+Classe 2 :
+Nom Package : …………..
+Nom classe : …………..
+Nombre des attributs publics : …………..
+Liste et types des attributs publics : [att1 – type, att2 – type, …]
+Nombre des attributs privés : …………..
+Liste et types des attributs privés : [att1 – type, att2 – type, ...]
+Liste des constructeurs : [const1, const2 ….]
+Nombre de méthodes : …………..
+Liste des méthodes : [m1, m2 , …]
+Type de retour des méthodes : [m1 : type retour, m2 : type retour….]
+Paramètres et types des méthodes : m1 [param1 : type, param2 : type …..], m2 [param1 : type, param2 : type …..]
+----------------------------------------------------------------------------------------------------------------------------------------
+Classe 3 :
+………………………………………………
+………………………………………………
+………………………………………………
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Exemple : soit un projet Java P1 qui contient deux classes : employee, entreprise.
+
+Projet p1 ={ employee, entreprise}
+
+Package pack1;
+public class employee {
+public String name;
+public int age;
+public String designation;
+private double salary;
+
+public employee(String name) {this.name = name;}
+public void empAge(int empAge) {age = empAge;}
+public void empDesignation(String empDesig) {designation = empDesig;}
+public void empSalary(double empSalary) {salary = empSalary;}
+public void printName() {System.out.println("Name:"+ name );}
+}
+
+Package pack1;
+public class entreprise {
+public String name;
+public String adresse;
+public entreprise(String name) {this.name = name;}
+public void empAdresse(String a) {adresse = a;}
+public void printName() {System.out.println("Name:"+ name );}
+}
+
+La description textuelle associée a ce projet est donnée par :
+
+----------------------------------------------------------------------------------------------------------------------------------------
+Description textuelle -- Date : 15/04/2020 (new Date())
+----------------------------------------------------------------------------------------------------------------------------------------
+Information projet
+----------------------------------------------------------------------------------------------------------------------------------------
+Nom du projet : p1
+Nombre de classes : 2
+Java Version : 8 // Voir le support de TP sur le fichier pour savoir comment récupérer cette information
+OS : Windows 10 // Voir le support de TP sur le fichier
+----------------------------------------------------------------------------------------------------------------------------------------
+Information classes
+----------------------------------------------------------------------------------------------------------------------------------------
+Classe 1 :
+Nom Package : pack1
+Nom classe : employee
+Nombre des attributs publics : 3
+Liste et types des attributs publics : [name – String, age – int, designation - String ]
+Nombre des attributs privés : 1
+Liste et types des attributs privés : [salary - double]
+Liste des constructeurs : [employee]
+Nombre de méthodes :4
+Liste des méthodes : [empAge, empDesignation, empSalary, printName]
+Type de retour des méthodes : [empAge: void, empDesignation: void, empSalary: void, printName: void]
+Paramètres et types des méthodes : empAge [param1 : int], empDesignation[param1 : String], empSalary [param1 : double], printName []
+----------------------------------------------------------------------------------------------------------------------------------------
+Classe 2 :
+Nom Package : pack1
+Nom classe : entreprise
+Nombre des attributs publics : 2
+Liste et types des attributs publics : [name – String, adresse – String]
+Nombre des attributs privés : 0
+Liste et types des attributs privés : []
+Liste des constructeurs : [entreprise]
+Nombre de méthodes :2
+Liste des méthodes : [empAdresse, printName]
+Type de retour des méthodes : [empAdresse: void, printName: void]
+Paramètres et types des méthodes : empAdresse [param1 : String], printName []
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Remarque : Le programme à réaliser doit prendre en considération la gestion des exceptions.
+
+Bon courage.

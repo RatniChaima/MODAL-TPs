@@ -1,0 +1,18 @@
+Exercice :
+
+Soit F un fichier TEXT qui contient des informations sur des étudiants. Un étudiant est identifié par un nom, prénom, matricule, niveau d’études et une spécialité.
+Exemple de la structure de F :
+
+Amine Taibi 21548 M1 IL
+Karima haddadi 25481 M1 RSD
+…………………………………..
+On suppose que le fichier F est déjà créé.
+-Ecrire un programme Java (P.java) qui permet de lire le contenu du fichier F et créer des objets de type Etudiant à partir de ce contenu.
+-Utiliser la sérialisation pour sauvegarder l’état de ces objets.
+
+Remarque :
+-Le programme P.java doit prendre en considération la gestion des exceptions.
+-Utiliser un menu pour l’exécution du programme.
+-Le travail se fait uniquement en monôme.
+
+Bon courage.
