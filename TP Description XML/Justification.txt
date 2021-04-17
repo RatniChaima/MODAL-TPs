@@ -1,0 +1,8 @@
+J'ai choisi un seul fichier XML qui représente toutes les classes du projet.
+
+Justification:
+XML est utilisé pour modéliser structurer et stocker des données afin qu'elles soient lisibles aussi 
+bien par les humains et les programmes. 
+Donc pour une structure bien formée lisible et facile à manipuler, j'ai choisi qu'on fait toutes les classes dans un 
+seul fichier XML qui contient le projet avec ses classes , où la racine est notre projet et les nœuds enfants sont
+les classes.
